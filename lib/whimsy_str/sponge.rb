@@ -13,9 +13,10 @@ module WhimsyStr
     # @return [String] - a modified string in the style of the Spongbob 'mocking
     #         text' meme format.
     def spongify(chance_of_upcase = 0.5)
+      chance_of_upcase = Float(chance_of_upcase)
       return self unless chance_of_upcase.positive?
 
-      random = Random.new(Float(chance_of_upcase))
+      random = Random.new(chance_of_upcase)
       chars.map.with_index do |char, index|
         will_upcase = if block_given?
                         yield char, index

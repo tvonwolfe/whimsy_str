@@ -8,9 +8,10 @@ module WhimsyStr
     # character of the original string.
     # @return [String] - a modified string in the 'vaporwave' aesthetic.
     def wavify(num_spaces = 1)
+      num_spaces = Integer(num_spaces)
       return self unless num_spaces.positive?
 
-      chars.join(' ' * Integer(num_spaces))
+      chars.join(' ' * num_spaces)
     end
   end
 end
