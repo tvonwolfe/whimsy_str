@@ -12,6 +12,7 @@ Gem::Specification.new do |gem|
   gem.authors = ['Tony Von Wolfe']
   gem.email = ['tonyvonwolfe@gmail.com']
   gem.files = %w[whimsy_str.gemspec README.md LICENSE] + `git ls-files | grep -E '^(bin|lib)'`.split("\n")
+  gem.executables = %w[sponge wavy]
   gem.homepage = 'https://github.com/tvonwolfe/whimsy_str'
   gem.license = 'Unlicense'
   gem.required_ruby_version = '>= 2.7.0'

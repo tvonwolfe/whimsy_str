@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'whimsy_str'
+
+string, count = ARGV
+
+puts string.wavify(count.nil? ? 1 : count)
