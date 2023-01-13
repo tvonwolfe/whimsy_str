@@ -1,4 +1,6 @@
 # whimsy_str
+[![Gem Version](https://badge.fury.io/rb/whimsy_str.svg)](https://badge.fury.io/rb/whimsy_str)
+
 A simple rubygem to inject some whimsicality into your strings.
 
 ## Motivations
