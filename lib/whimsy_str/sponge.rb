@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'byebug'
-
 module WhimsyStr
   module Sponge
     # Transform a string by randomly upcasing/downcasing each character in it.
