@@ -1,7 +1,19 @@
 #!/usr/bin/env ruby
 
+# frozen_string_literal: true
+
 require 'whimsy_str'
+
+def usage_str
+  "Usage: wavy <string> [count]\n\
+    count - number of spaces to insert between each character (defaults to 1)"
+end
 
 string, count = ARGV
 
-puts string.wavify(count.nil? ? 1 : count)
+if string.nil?
+  puts usage_str
+  exit(-1)
+end
+
+puts string.wavify(count.nil? ? 1 : Integer(count))
