@@ -4,6 +4,15 @@
 
 require 'whimsy_str'
 
-string = ARGV[0]
+def usage_str
+  'Usage: sponge <string>'
+end
+
+if ARGV.empty?
+  puts usage_str
+  exit(-1)
+end
+
+string = ARGV.first
 
 puts string.spongify
